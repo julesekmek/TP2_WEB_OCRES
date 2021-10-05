@@ -30,18 +30,30 @@
 	<body>
 		<header>
 			<div class="container">
-				<div class="wrapper">
+				<div class="wrapper row">
 					<div class="logo-search">
 						<img class="pull-left" src="img/logo.png" />
 					</div>
 	
-					<form method="POST" action="index.html">
+					<form method="POST" action="index.html" class = "col-sm-6">
 						<input type="search" required class="search">
 						<input type="submit" name="submit" value="Rechercher" class="submit">
 					</form>
-					<div class="user">
-						<a href="#">Luke Chesser</a>
-					</div>
+
+
+
+					<div class="dropdown col ml-auto">
+						<a class="user" href="#" role="button" id="Luke Chesser" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						  Luke Chesser
+						</a>
+					  
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+						  <a class="dropdown-item" href="#">Action</a>
+						  <a class="dropdown-item" href="#">Another action</a>
+						  <a class="dropdown-item" href="#">Something else here</a>
+						</div>
+					  </div>
+
 				</div>
 			</div>
 		</header>
@@ -50,7 +62,6 @@
 				<div  class="row ">
 						<div class="col-1"></div>
 						<div class="d-none d-lg-block col-2">
-							<aside>
 								<h3>Browse</h3>
 								<nav class="browse">
 									<ul class="main">
@@ -59,9 +70,8 @@
 										<li><a class="top" href="#">Top Charts</a></li>
 										<li><a class="new" href="#">New Releases</a></li>
 									</ul>
-								</nav>
+								
 								<h3>Your music</h3>
-								<nav class="music">
 									<ul class="main">
 										<li><a class="collection" href="#">Collection</a></li>
 										<li><a class="history" href="#">History</a></li>
